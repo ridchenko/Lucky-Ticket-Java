@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @SuppressLint("UseCompatLoadingForDrawables")
-    public void onClick(View view) {
-        EditText num = findViewById(R.id.editTextPersonName);
+    public void CheckTicket(View view) {
+        EditText num = findViewById(R.id.etTicketNumber);
         String input = num.getText().toString();
         ImageView picture = findViewById(R.id.imageView);
         Drawable pictureGreen = getDrawable(getResources()
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 .getIdentifier("@drawable/red_light", null, getPackageName()));
 
         if (input.length() == 6) {
-            try {
                 String[] str = Arrays.copyOfRange(input.split(""),
                         1,
                         input.split("").length);
@@ -43,12 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     picture.setImageDrawable(pictureRed);
                 }
-            } catch (NumberFormatException ex) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Enter 6 digits",
-                        Toast.LENGTH_SHORT);
-                toast.show();
-            }
         } else {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Enter 6 digits",
