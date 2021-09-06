@@ -8,19 +8,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCheckNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPersonName"
+        android:layout_below="@id/etTicketNumber"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="40dp"
-        android:onClick="onClick"
+        android:onClick="CheckTicket"
         android:text="@string/button"
         tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
 
     <EditText
-        android:id="@+id/editTextPersonName"
+        android:id="@+id/etTicketNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -28,13 +28,13 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:hint="@string/hint"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:layout_below="@id/imageView2"
