@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public void CheckTicket(View view) {
         EditText num = findViewById(R.id.etTicketNumber);
         String input = num.getText().toString();
-        ImageView picture = findViewById(R.id.imageView);
+        ImageView picture = findViewById(R.id.light);
         Drawable pictureGreen = getDrawable(getResources()
                 .getIdentifier("@drawable/green_light", null, getPackageName()));
         Drawable pictureRed = getDrawable(getResources()
