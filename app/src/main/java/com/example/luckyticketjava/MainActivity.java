@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @SuppressLint("UseCompatLoadingForDrawables")
-    public void CheckTicket(View view) {
+    public void fnCheckTicket(View view) {
         EditText num = findViewById(R.id.etTicketNumber);
         String input = num.getText().toString();
         ImageView picture = findViewById(R.id.light);
