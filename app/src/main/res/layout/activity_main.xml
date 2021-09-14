@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="40dp"
-        android:onClick="CheckTicket"
+        android:onClick="fnCheckTicket"
         android:text="@string/button"
         tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
 
@@ -25,23 +25,23 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="40dp"
-        android:layout_below="@id/light"
+        android:layout_below="@id/imgLight"
         android:layout_marginTop="50dp"
         android:hint="@string/hint"
         android:inputType="numberSigned"
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/light"
+        android:id="@+id/imgLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:layout_below="@id/ticket"
+        android:layout_below="@id/imgTopImage"
         android:src="@drawable/gray_light" />
 
     <ImageView
-        android:id="@+id/ticket"
+        android:id="@+id/imgTopImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
