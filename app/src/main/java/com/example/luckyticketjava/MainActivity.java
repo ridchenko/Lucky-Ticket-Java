@@ -14,6 +14,7 @@ import android.widget.Toast;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
+ private static final int NUMBER_OF_DIGITS = 6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Drawable pictureRed = getDrawable(getResources()
                 .getIdentifier("@drawable/red_light", null, getPackageName()));
 
-        if (input.length() == 6) {
+        if (input.length() == NUMBER_OF_DIGIT) {
                 String[] str = Arrays.copyOfRange(input.split(""),
                         1,
                         input.split("").length);
